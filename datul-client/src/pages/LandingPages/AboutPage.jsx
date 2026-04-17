@@ -20,7 +20,7 @@ const AboutPage = () => {
               A campus shop focused on useful products and simple ordering.
             </h1>
             <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-600 sm:text-base">
-              BulldogEx Shop keeps the low-fidelity layout system while presenting clear
+              NU BAND STORE keeps the low-fidelity layout system while presenting clear
               product categories, quick actions, and straightforward store information.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">

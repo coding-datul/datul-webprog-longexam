@@ -4,31 +4,37 @@ import products from '../../assets/product-content.js';
 
 const ProductListPage = () => {
   return (
-    <div className="flex w-full flex-col gap-6">
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
-          Products
-        </p>
-        <h1 className="max-w-xl text-3xl font-bold leading-tight text-zinc-900 sm:text-4xl">
-          Shop campus essentials in a simple product grid
-        </h1>
-        <p className="mt-4 max-w-lg text-sm leading-7 text-zinc-600 sm:text-base">
-          Browse practical items for class, study, commute, and everyday campus routines.
-        </p>
-        <div className="mt-6">
-          <Button to="/">Back Home</Button>
+    <div className="flex w-full flex-col gap-8">
+      <section className="border-y-2 border-yellow-400 bg-white px-4 py-10 sm:px-6 sm:py-12 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <p className="mb-3 text-[11px] font-semibold uppercase tracking-[0.28em] bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+            Our Collection
+          </p>
+          <h1 className="max-w-2xl text-4xl font-bold leading-tight text-blue-950 sm:text-5xl">
+            Premium Musical Instruments & Accessories
+          </h1>
+          <p className="mt-5 max-w-lg text-base leading-7 text-blue-700 sm:text-lg">
+            Discover high-quality products designed for musicians of all levels. From beginners to professionals, we have everything you need.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <Button to="/">← Back Home</Button>
+            <Button to="/about" variant="primary">Learn More</Button>
+          </div>
         </div>
       </section>
 
-      <section className="border-y-2 border-zinc-900 bg-zinc-50 px-4 py-6 sm:px-6 sm:py-8 lg:px-8">
-        <div className="mb-6">
-          <p className="text-[11px] font-semibold uppercase tracking-[0.28em] text-zinc-500">
-            Featured Products
-          </p>
-          <h2 className="mt-2 text-2xl font-semibold text-zinc-900">Product card grid</h2>
-        </div>
+      <section className="px-4 py-8 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-6xl">
+          <div className="mb-10">
+            <p className="text-[11px] font-semibold uppercase tracking-[0.28em] bg-gradient-to-r from-blue-700 to-blue-900 bg-clip-text text-transparent">
+              Available Products
+            </p>
+            <h2 className="mt-3 text-3xl font-bold text-blue-950">Browse Our Selection</h2>
+            <p className="mt-2 text-sm text-blue-700">Choose from {products.length} carefully curated products</p>
+          </div>
 
-        <ProductList products={products} />
+          <ProductList products={products} />
+        </div>
       </section>
     </div>
   );
